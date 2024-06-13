@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import entites.Aluno;
 
-public class Exercicio05 {
+public class Program05 {
 
 	public static void main(String[] args) {
 		
