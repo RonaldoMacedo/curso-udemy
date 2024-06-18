@@ -3,34 +3,34 @@ package entites;
 public class Account {
 	
 	private int number;
-	private String name;
+	private String holder;
 	private double balance;
 	
 	public Account () {
 		
 	}
 
-	public Account(int number, String name, double balance) {
+	public Account(int number, String holder, double initialDeposit) {
 		this.number = number;
-		this.name = name;
-		this.balance = balance;
+		this.holder = holder;
+		deposit(initialDeposit);
 	}
 	
-	public Account(int number, String name) {
+	public Account(int number, String holder) {
 		this.number = number;
-		this.name = name;
+		this.holder = holder;
 	}
 
 	public int getNumber() {
 		return number;
 	}
 
-	public String getName() {
-		return name;
+	public String getHolder() {
+		return holder;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setHolder(String holder) {
+		this.holder = holder;
 	}
 
 	public double getBalance() {
@@ -46,7 +46,7 @@ public class Account {
 	}
 	
 	public String toString() {
-		return "Account: " + number + ", holder: " + name + ", balance: $" + String.format("%.2f", balance);
+		return "Account: " + number + ", holder: " + holder + ", balance: $" + String.format("%.2f", balance);
 	}
 
 }
