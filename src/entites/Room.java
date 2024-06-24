@@ -3,16 +3,14 @@ package entites;
 public class Room {
 	
 	private String name, email;
-	private int roomNumber;
 	
 	public Room() {
 		
 	}
 
-	public Room(String name, String email, int roomNumber) {
+	public Room(String name, String email) {
 		this.name = name;
 		this.email = email;
-		this.roomNumber = roomNumber;
 	}
 
 	public String getName() {
@@ -30,17 +28,9 @@ public class Room {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public int getRoomNumber() {
-		return roomNumber;
-	}
-
-	public void setRoomNumber(int roomNumber) {
-		this.roomNumber = roomNumber;
-	}
-	
+		
 	public String toString() {
-		return roomNumber + ": " + name + ", " + email;
+		return name + ", " + email;
 	}
 
 }
