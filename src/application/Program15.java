@@ -6,11 +6,11 @@ public class Program15 {
 		
 		int x = 20;
 		
-		Object obj = x;
+		Integer obj = x;
 		
 		System.out.println(obj);
 		
-		int y = (int) obj;
+		int y = (int) obj * 2;
 		
 		System.out.println(y);
 
