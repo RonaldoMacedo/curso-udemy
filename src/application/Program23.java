@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Account;
+import model.exceptions.AccountException;
 
 public class Program23 {
 
@@ -28,15 +29,14 @@ public class Program23 {
 		System.out.println();
 		try {
 			System.out.print("Enter amount for withdraw: ");
-			double withdraw = sc.nextDouble();
+			double amount = sc.nextDouble();
 			
-			acc.withdraw(withdraw);
+			acc.withdraw(amount);
+			System.out.println(acc);
 			
-		}catch(Exception e) {
-			System.out.println(e);
+		}catch(AccountException e) {
+			System.out.println(e.getMessage());
 		}
-
-		System.out.println(acc);
 
 		sc.close();
 
