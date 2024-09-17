@@ -52,7 +52,7 @@ public class Program25 {
 		int s;
 		
 		r = 5.0;
-		s = (int)r;
+		s = (int)r; //casting
 		
 		System.out.println(s);
 
