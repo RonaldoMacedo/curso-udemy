@@ -11,13 +11,17 @@ public class Program55 {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		double result = 0.0;
 		
 		for(int i = 0; i < n; i++) {
 			double n1 = sc.nextDouble();
 			double n2 = sc.nextDouble();
-			result = n1 / n2;
-			System.out.println(result);
+			
+			if(n2 == 0) {
+				System.out.println("Divisão impossível");
+			}else {
+				double div = n1 / n2;
+				System.out.printf("%.1f%n", div);
+			}
 		}
 		
 		sc.close();

@@ -17,11 +17,8 @@ public class Program54 {
 			double a = sc.nextDouble();
 			double b = sc.nextDouble();
 			double c = sc.nextDouble();
-			media = (a + b + c) / 3.0;
-		}
-		
-		for(int i = 0; i < n; i++) {
-			System.out.println(media);
+			media = (a * 2.0 +  b * 3.0 + c * 5.0) / 10.0;
+			System.out.printf("%.1f%n", media);
 		}
 		
 		sc.close();

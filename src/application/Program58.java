@@ -11,13 +11,10 @@ public class Program58 {
 		int n = sc.nextInt();
 		
 		for(int i = 1; i <= n; i++) {
+			int p = i;
 			int q = i * i;
 			int c = i * i * i;
-			System.out.print(i + " ");
-			System.out.println();
-			System.out.print(q + " ");
-			System.out.println();
-			System.out.print(c + " ");
+			System.out.printf("%d %d %d%n", p, q, c);
 		}
 		
 		sc.close();
